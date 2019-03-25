@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lab 20a</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>    
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>  
+  <script src="/site/tester.js"></script> 
+</head>
+<body>
+    <article class="section">
+        <h1 class="title is-4">Test Web Services (PUT/POST/DELETE)</h1>
+
+    <label class="label">Symbol</label>
+    <input class="input" type="text" value="AMZN" id="symbol">
+    
+    <label class="label">Name</label>
+    <input class="input" type="text" value="Amazon.com Inc" id="name">   
+    
+    <label class="label">SEC</label>
+    <input class="input" type="text" value="reports" id="sec">       
+    
+    <label class="label">Sector</label>
+    <input class="input" type="text" value="Consumer Discretionary" id="sector"> 
+    
+    <label class="label">Sub Industry</label>
+    <input class="input" type="text" value="Internet & Direct Marketing Retail" id="sub"> 
+    
+    <label class="label">Address</label>
+    <input class="input" type="text" value="Seattle, Washington" id="address"> 
+    
+    <label class="label">Date Added</label>
+    <input class="input" type="text" value="11/18/2005" id="added">    
+    
+    <label class="label">CIK</label>
+    <input class="input" type="text" value="764180" id="cik">  
+    
+    <label class="label">Frequency</label>
+    <input class="input" type="text" value="65" id="freq">      
+    
+    <div class="box">
+        <button class="button is-primary" id="btnUpdate">
+          Update (HTTP PUT)
+        </button>
+        <button class="button is-info" id="btnInsert">
+          Insert (HTTP POST)
+        </button>
+        <button class="button is-danger" id="btnDelete">
+          Delete (HTTP DELETE)
+        </button>           
+    </div>
+
+    <div class="notification is-warning" id="notifier"></div>
+
+    </article>
+
+</body>
+</html>   
